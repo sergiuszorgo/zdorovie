@@ -145,8 +145,8 @@ header {
 .hero {
 	/* height: 100vh; */
 	height: calc(100vh - 60px);
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/Designer03.jpeg);
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/Designer03.jpeg);
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/health-01.jpg);
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/health-01.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
@@ -177,7 +177,7 @@ header {
 	color: var(--main-bg-col);
 	font-size: 22px;
 	letter-spacing: 0.05em;
-	text-align: justify;
+	text-align: center;
 }
 
 /* .hero-descr {
@@ -227,8 +227,8 @@ header {
  	background-position: center;
  	background-repeat: no-repeat;
  	background-size: cover;
- 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/Designer.jpeg);
- 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/Designer.jpeg);
+ 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/health-02.jpg);
+ 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/health-02.jpg);
 }
 
 .concept-wrap {
