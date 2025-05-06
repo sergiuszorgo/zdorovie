@@ -226,13 +226,13 @@ header {
 
 .concept {
 	width: 100%;
-	height: 80vh;
+	height: 40vh;
 	background-attachment: fixed;
  	background-position: center;
  	background-repeat: no-repeat;
  	background-size: cover;
- 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/health-02.jpg);
- 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/health-02.jpg);
+ 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/banochki.png);
+ 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/banochki.png);
 }
 
 .concept-wrap {
@@ -247,11 +247,17 @@ header {
 }
 
 .concept-wrap h2 {
-	font-size: 2.2em;
-	font-weight: 300;
+	font-size: 1em;
+	font-weight: 600;
+	font-family: "Montserrat";
 	color: var(--main-bg-col);
 	text-align: center;
 	display: inline-block;
+}
+
+.concept-wrap h2 span {
+	font-size: 1.5em;
+	font-weight: 600;
 }
 
 .descript {
@@ -265,7 +271,7 @@ header {
 }
 
 .main-text {
-	margin-top: 16px;
+	margin-bottom: 16px;
 	font-family: "Montserrat";
 	font-weight: 400;
 	font-size: 16px;
@@ -293,6 +299,7 @@ header {
 }
 
 .bold {
+	margin-bottom: 24px;
 	color: var(--green-text);
 	font-family: "Montserrat";
 	font-weight: 600;
@@ -446,6 +453,12 @@ header {
 		width: 100%;
 		display: block;
 	}
+	.concept-wrap h2 {
+		font-size: 1.875em;
+	}
+	.concept-wrap h2 span {
+		font-size: 1.25em;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -475,7 +488,7 @@ header {
 	.vect {
 		width: 100%;
 	}
-	.main-img {
+	.img-vis {
 		display: none;
 	}
 	.bold {
@@ -486,5 +499,11 @@ header {
 	}
 	.card-text {
 		font-size: 1em;
+	}
+	.concept-wrap h2 {
+		font-size: 1.875em;
+	}
+	.concept-wrap h2 span {
+		font-size: 2em;
 	}
 }
