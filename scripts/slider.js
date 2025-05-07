@@ -17,7 +17,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
       
       // Создаем индикаторы (точки)
       function createDots() {
-        for (let i = 0; i <= maxIndex; i++) {
+        for (let i = 0; i <= maxIndex - 2; i++) {
           const dot = document.createElement('div');
           dot.classList.add('dot');
           if (i === 0) dot.classList.add('active');
