@@ -5,6 +5,7 @@
 	--green-text: #004202;
 	--main-bg-col: #FFF;
 	--hero-bg-col: #E7E0DC;
+	--card-col: #fff3e7;
 	--main-text-col: #212121;
 	--sec-bg-col: #FFEBD9;
 	--accent-col: #F27B3F;
@@ -260,7 +261,7 @@ header {
 }
 
 .descript {
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .main-wrap h2 {
@@ -293,8 +294,8 @@ header {
 	font-weight: 200;
 }
 
-.descript-wrap p:not(:first-child) {
-	margin-top: 30px;
+.card-text {
+	margin-top: 24px;
 }
 
 .bold {
@@ -313,8 +314,78 @@ header {
 
 
 .descript-wrap {
-
+	overflow: hidden;
 }
+
+/* SLIDER  */
+
+.slider-container {
+	width: 100%;
+	/* max-width: 1000px; */
+	position: relative;
+	padding: 24px 0 40px;
+}
+  
+.slider {
+	display: flex;
+	gap: 8px;
+	transition: transform 0.5s ease-in-out;
+	touch-action: pan-y;
+}
+  
+.card {
+	min-width: 300px;
+	border: 1px solid var(--accent-col);
+	border-radius: 8px;
+	padding: 20px 14px;
+	background-color: var(--card-col);
+}
+
+.img-card {
+	display: none;
+	background-image: url(/img/koloski.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.large-img-card {
+	display: none;
+	width: 100%;
+	background-image: url(/img/stoopka.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+  
+.accent-text {
+	color: var(--accent-col);
+	font-weight: 600;
+	font-size: 1.25em;
+}
+
+.slider-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+  
+.dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+  
+.dot.active {
+	background-color: #555;
+}
+
+/* SLIDER END */
+
 
 /* media */
 
@@ -357,6 +428,31 @@ header {
 	.main-first, .main-sec {
 		width: calc((100% - 20px) / 2);
 	}
+	.slider {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.card {
+		width: calc((100% - 20px) / 2);
+	}
+	.bold {
+		font-size: 1.5em;
+	}
+	.accent-text {
+		font-size: 1.125em;
+	}
+	.card-text {
+		margin-top: 16px;
+		font-size: 0.85em;
+	}
+	.img-card {
+		display: block;
+	}
+	.large-img-card {
+		min-height: 245px;
+		width: 100%;
+		display: block;
+	}
 	.concept-wrap h2 {
 		font-size: 1.875em;
 	}
@@ -394,6 +490,15 @@ header {
 	}
 	.img-vis {
 		display: none;
+	}
+	.bold {
+		font-size: 1.875em;
+	}
+	.accent-text {
+		font-size: 1.375em;
+	}
+	.card-text {
+		font-size: 1em;
 	}
 	.concept-wrap h2 {
 		font-size: 1.875em;
