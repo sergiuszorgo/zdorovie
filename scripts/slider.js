@@ -2,8 +2,8 @@ if (window.matchMedia("(max-width: 480px)").matches) {
     document.addEventListener('DOMContentLoaded', function() {
       const slider = document.querySelector('.slider');
       const cards = document.querySelectorAll('.card');
-      const prevBtn = document.querySelector('.prev-btn');
-      const nextBtn = document.querySelector('.next-btn');
+      // const prevBtn = document.querySelector('.prev-btn');
+      // const nextBtn = document.querySelector('.next-btn');
       const dotsContainer = document.querySelector('.slider-dots');
       
       let slideWidth = cards[0].offsetWidth + parseInt(getComputedStyle(cards[0]).marginLeft) * 2;
@@ -40,6 +40,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
       function goToSlide(index) {
         currentIndex = Math.max(0, Math.min(index, maxIndex));
         slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        // slider.style.transform = `translateX(-${(currentIndex * slideWidth) + 12}px)`;
         updateDots();
       }
       
