@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/styles.css" type="text/css">
+	<link rel="stylesheet" href="./css/parallax.css" type="text/css">
 	<title>Мастерская Здоровья</title>
 </head>
 <body>
@@ -64,10 +65,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="concept">
-		<div class="concept-wrap">
+	<div class="container container--small">
+		<div class="concept">
 			<h2><span>«ФьюжнМед»</span> <br> слияние медицинских традиций Запада и Востока.</h2>
 		</div>
+		<div class="parallax bg1"></div>
 	</div>
 	<div class="descript">
 		<div class="descript-wrap">
@@ -113,8 +115,42 @@
 			  </div>
 		</div>
 	</div>
-	
-	
+	<div class="conclusion">
+		<div class="conc-wrap">
+			<div class="conc-text">
+				<p class="bold">Заключение</p>
+				<p class="card-text">Система «ФьюжнМед» — это не только способ оздоровления и лечения, но также и самостоятельная эффективная концепция, открывающая новые возможности для персонализированного подхода к восстановлению, поддержанию и укреплению здоровья.</p>
+				<p class="card-text">Он вбирает в себя лучшее из двух миров: научный прогресс и технологические достижения Запада, а также глубокую философию и практики Востока. Этот метод способствует целостному восстановлению здоровья, что делает его всесторонне обоснованным и востребованным методом для современных пациентов, стремящихся к гармонии и укреплению своего здоровья.</p>
+			</div>
+			<div class="forma">
+				<span>
+					<input type="text" id="name" placeholder="Имя" class="form-input">
+					<label for="name">
+						<svg class="form-svg">
+							<use href="./img/symbols.svg#user"></use>
+						</svg>
+					</label>
+				</span>
+				<span>
+					<input type="tel" id="number" placeholder="Телефон в формате +000..." class="form-input">
+					<label for="number">
+						<svg class="form-svg">
+							<use href="./img/symbols.svg#call"></use>
+						</svg>
+					</label>
+				</span>
+				<span class="submit-span">
+					<input type="submit" value="получить консультацию" class="form-submit">
+				</span>
+			</div>
+		</div>
+	</div>
 	<script src="./scripts/slider.js"></script>
+	<script src="./scripts/parallax.js"></script>
+	<script>
+		new universalParallax().init({
+			speed: 4
+		});
+	</script>
 </body>
 </html>
