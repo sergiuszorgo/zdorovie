@@ -323,7 +323,7 @@ header {
 
 .img-card {
 	display: none;
-	background-image: url(/img/koloski.jpg);
+	background-image: url(./img/koloski.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -332,7 +332,7 @@ header {
 .large-img-card {
 	display: none;
 	width: 100%;
-	background-image: url(/img/stoopka.jpg);
+	background-image: url(./img/stoopka.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
